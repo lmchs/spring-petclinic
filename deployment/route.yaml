@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: pipeline-demo
+  namespace: pipelines-tutorial
+spec:
+  path: /
+  to:
+    kind: Service
+    name: pipeline-demo
+  port:
+    targetPort: 8080
