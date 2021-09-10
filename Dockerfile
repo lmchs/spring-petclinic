@@ -1,4 +1,5 @@
-FROM public.ecr.aws/bitnami/java:1.8
+#FROM public.ecr.aws/bitnami/java:1.8
+FROM image-registry.openshift-image-registry.svc:5000/openshift/java:8
 
 #ARG profile=dev
 
