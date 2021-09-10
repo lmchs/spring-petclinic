@@ -1,9 +1,8 @@
 FROM public.ecr.aws/bitnami/java:1.8
-VOLUME /tmp
 
-ARG profile=dev
+#ARG profile=dev
 
-COPY target/*.jar /app.jar
+COPY target/ocp-1-0.0.1-SNAPSHOT.jar /ocp-1-0.0.1-SNAPSHOT.jar
 COPY docker/20accfbb-5bcd-4edc /20accfbb-5bcd-4edc
 #COPY docker/logback.xml /logback.xml
 #COPY docker/dockerStarter.ksh /dockerStarter.ksh
